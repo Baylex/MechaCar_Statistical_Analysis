@@ -1,7 +1,11 @@
 # MechaCar_Statistical_Analysis
 UT McCombs Data Boot Camp Module 15: Statistics and R
 ## Linear Regression to Predict MPG
-insert image
+### Linear Regression
+![Pic 1](https://github.com/Baylex/MechaCar_Statistical_Analysis/blob/main/Images/1_lin_reg.PNG)
+### Summary Statitistics 
+![Pic 2](https://github.com/Baylex/MechaCar_Statistical_Analysis/blob/main/Images/2_sum_stat.PNG)
+
 1. Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
 2. Is the slope of the linear model considered to be zero? Why or why not?
 3. Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
@@ -10,7 +14,11 @@ insert image
 
 
 ## Summary Statistics on Suspension Coils
-insert image
+### Total Lot Summary
+![Pic 3](https://github.com/Baylex/MechaCar_Statistical_Analysis/blob/main/Images/3_tot_sum.PNG)
+### Summary by Manufacturing Lot
+![Pic 4](https://github.com/Baylex/MechaCar_Statistical_Analysis/blob/main/Images/4_lot_sum.PNG)
+
 1. The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not? 
 2. There is a summary that addresses the design specification requirement for all the manufacturing lots and each lot individually
 
@@ -18,7 +26,14 @@ insert image
 
 
 ## T-Tests on Suspension Coils
-insert image
+### T-test for all Lots
+![Pic 5](https://github.com/Baylex/MechaCar_Statistical_Analysis/blob/main/Images/5_lot_all.PNG)
+### T-test for Lot 1
+![Pic 6](https://github.com/Baylex/MechaCar_Statistical_Analysis/blob/main/Images/6_lot_1.PNG)
+### T-test for Lot 2
+![Pic 7](https://github.com/Baylex/MechaCar_Statistical_Analysis/blob/main/Images/7_lot_2.PNG)
+### T-test for Lot 3
+![Pic 8](https://github.com/Baylex/MechaCar_Statistical_Analysis/blob/main/Images/8_lot_3.PNG)
 1. briefly summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary.
 
 ✓An RScript is written for a t-test that compares all manufacturing lots against the mean PSI of the population. ✓An RScript is written for ALL THREE t-tests that compare each manufacturing lot against the mean PSI of the population. ✓The summary addresses the results across all manufacturing lots and ALL THREE lots.
@@ -35,3 +50,5 @@ insert image
 
 The statistical study design has the following: ✓A metric to be tested is mentioned. ✓A null or alternative hypothesis is described. ✓A statistical test is well described to test the hypothesis. ✓The data for the statistical test is well described.
 
+An updated README.md that has the written summaries for Deliverables 1, 2, and 3 and your design for a statistical study comparing vehicle performance of the MechaCars against other manufacturers’ vehicles.
+To submit your challenge assignment in Canvas, click Submit, then provide the URL of your MechaCar_Statistical_Analysis GitHub repository for grading.
