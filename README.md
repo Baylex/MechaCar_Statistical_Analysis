@@ -18,25 +18,25 @@ A summary of the linear regression can be displayed to determine the quality of 
 1. Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?       
 A 95% level of confidence was predetermined, meaning the p-value should be compared to alpha = .05 level of significance to verify if statistically significant.     
 
-Coefficients:    
-mpg: 0 < .05, statistically significant, non-random amount of variance 
-vehicle length: 0 < .05, statistically significant, non-random amount of variance
-vehicle weight: .08 > .05 not statistically significant, random amount of variance
-spoiler angle: .31 > .05 not statistically significant, random amount of variance
-ground clearance: 0 > .05 statistically significant, non-random amount of variance
-AWD: .19>=.05 not statistically significant, random amount of variance
+Coefficients:      
+mpg: 0 < .05, statistically significant, non-random amount of variance     
+vehicle length: 0 < .05, statistically significant, non-random amount of variance     
+vehicle weight: .08 > .05 not statistically significant, random amount of variance     
+spoiler angle: .31 > .05 not statistically significant, random amount of variance    
+ground clearance: 0 > .05 statistically significant, non-random amount of variance    
+AWD: .19>=.05 not statistically significant, random amount of variance     
 
-In summary, vehicle length and ground clearance variables represent non-random amounts of variance as applied to the mpg values.
+In summary, vehicle length and ground clearance variables represent non-random amounts of variance as applied to the mpg values.    
 
 2. Is the slope of the linear model considered to be zero? Why or why not?    
-Converting from scientific notation, all of the slopes of the variables are shown to be non-zero even though some are close to zero: 
+Converting from scientific notation, all of the slopes of the variables are shown to be non-zero even though some are close to zero:    
 
-Coefficients: 
-vehicle length: 6.267
-vehicle weight: .001
-spoiler angle: .069
-ground clearance: 3.546
-AWD: -3.411
+Coefficients:    
+vehicle length: 6.267    
+vehicle weight: .001   
+spoiler angle: .069   
+ground clearance: 3.546   
+AWD: -3.411    
 
 The multiple linear regression formula for mpg = -.01 + 6.267(vehicle length)+.001(vehicle weight)+.069(spoiler angle)+3.546(ground clearance)-3.411(AWD), which results in a non-zero slope.
 
