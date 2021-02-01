@@ -51,46 +51,53 @@ Below is the summary statistics of all of the manufacturing lots.  The mean is 1
 ![Pic 3](https://github.com/Baylex/MechaCar_Statistical_Analysis/blob/main/Images/3_tot_sum.PNG)
 
 ### Summary by Manufacturing Lot Number
-The means of the lot numbers are simialr to the population mean and the sample mean.  
+The means of the lot numbers are similar to the population mean and the sample mean.  
 
 ![Pic 4](https://github.com/Baylex/MechaCar_Statistical_Analysis/blob/main/Images/4_lot_sum.PNG)
 
 1. The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not? 
 
-The variance for the total manufacturing lot is 62 < 100, which is within the expected design specificantions of staying under 100 PSI.  However, when reviewing the data by Lot number, Lot 3 is a large contributing facor to the variance being high.  Lot 3 shows a variance of 170 > 100 and does not meet the design specifications.  Lot 1 and Lot 2 have significantly lower variance, 1 and 7 respectively.  
+The variance for the total manufacturing lot is 62 < 100, which is within the expected design specifications of staying under 100 PSI.  However, when reviewing the data by Lot number, Lot 3 is a large contributing factor to the variance being high.  Lot 3 shows a variance of 170 > 100 and does not meet the design specifications.  Lot 1 and Lot 2 have significantly lower variance, 1 and 7 respectively.  
 
 ## T-Tests on Suspension Coils
 ### T-test for all Lots
-All Manufactoring Lots: p-value = .6028, alpha = .05 
-.60 > .05, which meas the total manufactoring lot is not statistically significant from the normal distribution and normality can be assumed.  The mean falls within the 95% confidence interval.
+All Manufacturing Lots: p-value = .6028, alpha = .05   
+.60 > .05, which means the total manufacturing lot is not statistically significant from the normal distribution and normality can be assumed.  The mean falls within the 95% confidence interval.
 
 ![Pic 5](https://github.com/Baylex/MechaCar_Statistical_Analysis/blob/main/Images/5_lot_all.PNG)
 
 ### T-test for Lot 1
-Lot 1: p-value = 1, alpha = .05 
-1 > .05, which meas Lot 1 is not statistically significant from the normal distribution and normality can be assumed.  The mean falls within the 95% confidence interval.
+Lot 1: p-value = 1, alpha = .05    
+1 > .05, which means Lot 1 is not statistically significant from the normal distribution and normality can be assumed.  The mean falls within the 95% confidence interval.
 
 ![Pic 6](https://github.com/Baylex/MechaCar_Statistical_Analysis/blob/main/Images/6_lot_1.PNG)
 
 ### T-test for Lot 2
 Lot 2: p-value = .6072, alpha = .05 
-.60 > .05, which meas Lot 2 is not statistically significant from the normal distribution and normality can be assumed.  The mean falls within the 95% confidence interval.
+
+.60 > .05, which means Lot 2 is not statistically significant from the normal distribution and normality can be assumed.  The mean falls within the 95% confidence interval.
  
 ![Pic 7](https://github.com/Baylex/MechaCar_Statistical_Analysis/blob/main/Images/7_lot_2.PNG)
 
 ### T-test for Lot 3
-Lot 3: p-value = .04168, alpha = .05 
+Lot 3: p-value = .04168, alpha = .05   
 .04 < .05, which means it is statistically significant from the normal distribution and normality cannot be assumed.  However, the mean falls within the 95% confidence interval.
 
 ![Pic 8](https://github.com/Baylex/MechaCar_Statistical_Analysis/blob/main/Images/8_lot_3.PNG)
 
-The overall manufacotruing, Lot 1, and Lot 2 show a normal distribution.  Therefore, there is not sufficient evidence to reject the null hypothesis, which shows the two means are statistcailly similar. 
+The overall manufacturing, Lot 1, and Lot 2 show a normal distribution.  Therefore, there is not sufficient evidence to reject the null hypothesis, which shows the two means are statistically similar. 
 
 ## Study Design: MechaCar vs Competition
-When comparing MechaCar to its competitors other metrics that could be of interest to a consumer could include: cost, car color, city fuel efficiency, highway fuel efficiency, horse power, maintenance cost, or safety rating.
+When comparing MechaCar to its competitor’s other metrics that could be of interest to a consumer could include cost, car color, city fuel efficiency, highway fuel efficiency, horsepower, maintenance cost, or safety rating.
 
-1. What metric or metrics are you going to test?
-2. What is the null hypothesis or alternative hypothesis?
-3. What statistical test would you use to test the hypothesis? And why?
-4. What data is needed to run the statistical test?
+1. What metric or metrics are you going to test?   
+The next metrics to test should be the safety rating, horsepower, and highway fuel efficiency, which address some safety concerns of consumers. 
 
+2. What is the null hypothesis or alternative hypothesis?    
+The null hypothesis is that the mean of the safety rating is zero. The alternative hypothesis is that the mean of the safety rating is not zero.
+
+3. What statistical test would you use to test the hypothesis? And why?     
+Using a multiple linear regression statistical summary would show how the variables impact the safety ratings for MechaCar and their competitors.
+
+4. What data is needed to run the statistical test?     
+A random sample of n > 30 for MechaCar and their competitor, would need to be collected including the safety ratings, highway fuel efficiency, and horsepower plus running the data through RStudio.
