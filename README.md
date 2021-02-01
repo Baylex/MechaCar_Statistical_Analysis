@@ -15,10 +15,10 @@ A summary of the linear regression can be displayed to determine the quality of 
 
 ![Pic 2](https://github.com/Baylex/MechaCar_Statistical_Analysis/blob/main/Images/2_sum_stat.PNG)
 
-1. Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
-A 95% level of confidence was predetermined, meaning the p-value should be compared to alpha = .05 level of significance to verify if statistically significant.
+1. Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?       
+A 95% level of confidence was predetermined, meaning the p-value should be compared to alpha = .05 level of significance to verify if statistically significant.     
 
-Coefficients: 
+Coefficients:    
 mpg: 0 < .05, statistically significant, non-random amount of variance 
 vehicle length: 0 < .05, statistically significant, non-random amount of variance
 vehicle weight: .08 > .05 not statistically significant, random amount of variance
@@ -28,7 +28,7 @@ AWD: .19>=.05 not statistically significant, random amount of variance
 
 In summary, vehicle length and ground clearance variables represent non-random amounts of variance as applied to the mpg values.
 
-2. Is the slope of the linear model considered to be zero? Why or why not?
+2. Is the slope of the linear model considered to be zero? Why or why not?    
 Converting from scientific notation, all of the slopes of the variables are shown to be non-zero even though some are close to zero: 
 
 Coefficients: 
@@ -40,13 +40,12 @@ AWD: -3.411
 
 The multiple linear regression formula for mpg = -.01 + 6.267(vehicle length)+.001(vehicle weight)+.069(spoiler angle)+3.546(ground clearance)-3.411(AWD), which results in a non-zero slope.
 
-3. Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
-
+3. Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?    
 R-squared is .7149, which is a strong correlation for the dataset and shows the dataset is an effective dataset.  However, r-squared is not the only consideration for effectiveness.  There may be other variables not included in the dataset contributing to the variation in the mpg. 
 
 ## Summary Statistics on Suspension Coils
 ### Manufacturing Lot Summary
-Below is the summary statistics of all of the manufacturing lots.  The mean is 1498.78 for this sample and the population mean was determined to be 1500.  
+Below is the summary statistics of all of the manufacturing lots.  The mean is 1498.78 for this sample and the population mean was determined to be 1500.   
 
 ![Pic 3](https://github.com/Baylex/MechaCar_Statistical_Analysis/blob/main/Images/3_tot_sum.PNG)
 
@@ -55,8 +54,7 @@ The means of the lot numbers are similar to the population mean and the sample m
 
 ![Pic 4](https://github.com/Baylex/MechaCar_Statistical_Analysis/blob/main/Images/4_lot_sum.PNG)
 
-1. The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not? 
-
+1. The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?      
 The variance for the total manufacturing lot is 62 < 100, which is within the expected design specifications of staying under 100 PSI.  However, when reviewing the data by Lot number, Lot 3 is a large contributing factor to the variance being high.  Lot 3 shows a variance of 170 > 100 and does not meet the design specifications.  Lot 1 and Lot 2 have significantly lower variance, 1 and 7 respectively.  
 
 ## T-Tests on Suspension Coils
