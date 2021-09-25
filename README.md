@@ -1,5 +1,6 @@
 # MechaCar_Statistical_Analysis
-UT McCombs Data Boot Camp Module 15: Statistics and R
+Statistics and R
+
 ## Linear Regression to Predict MPG
 The MechaCar dataset contains a sample size of 50 prototypes measuring the miles per gallon across multiple variables.  The linear regression was calculated using R in RStudio. 
 1. RStudio v.1.4.1103 
